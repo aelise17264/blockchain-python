@@ -16,8 +16,14 @@ class Blockchain:
         return f'Blockchain: {self.chain}'
 
 
-blockchain = Blockchain()
-blockchain.add_block('first')
-blockchain.add_block('second')
 
-print(blockchain)
+def main():
+    blockchain = Blockchain()
+    blockchain.add_block('first')
+    blockchain.add_block('second')
+
+    print(blockchain)
+    print(f'blockchain.py __name__: {__name__}')
+
+if __name__ == '__main__':
+    main()
