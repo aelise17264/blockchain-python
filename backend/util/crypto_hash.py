@@ -7,8 +7,9 @@ import json
 def crypto_hash(*args):
     """
     Return a sha-256 hash of the given arguments
+    Hexadecimal form represents the has in 64 chars where each char ranges from 0 - 9 & a - f
     Secure Hash Algorithm in 256 bits(fixed size)
-    if even one character is changed a completely new has will be generated
+    if even one character is changed a completely new has will be generated 
     only possible to crack through guess & check
     """
     stringified_args = sorted(map(lambda data: json.dumps(data) , args))
